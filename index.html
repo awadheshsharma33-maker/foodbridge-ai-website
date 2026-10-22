@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0c2e25">
+<meta name="description" content="FoodBridge AI connects surplus food with nearby communities. Share food, spread hope.">
+<title>FoodBridge AI — Share food. Spread hope.</title>
+<style>
+:root{--forest:#0c2e25;--forest2:#12392e;--lime:#d5f6a2;--lime2:#c9ef8f;--ink:#10231d;--muted:#d2e0d8;--paper:#f7f8f5;--line:#d9e3dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px}.brand{display:flex;align-items:center;gap:13px;color:#fff}.logo{width:54px;height:54px;border-radius:17px;background:var(--lime);display:grid;place-items:center;color:var(--forest);flex-shrink:0}.logo svg{width:31px;height:31px}.brand-name{font-weight:800;font-size:clamp(1.2rem,2.5vw,1.7rem);letter-spacing:-.04em}.tagline{color:#c4d6cc;font-size:.95rem;margin-top:2px}.menu{display:flex;gap:26px;align-items:center;color:#e0eae3;font-size:.94rem}.menu a:hover{color:var(--lime)}.nav-toggle{display:none;background:transparent;border:0;color:white;font-size:1.8rem;cursor:pointer}.hero-shell{background:var(--forest);color:white;border-radius:30px;padding:0 34px 36px;overflow:hidden;box-shadow:0 20px 55px #09281c12}.hero-image{height:clamp(220px,38vw,440px);position:relative;overflow:hidden;border-radius:20px;margin-top:0;background:#244c3d}.hero-image img{width:100%;height:100%;object-fit:cover;display:block}.photo-credit{position:absolute;left:16px;bottom:16px;border-radius:30px;background:#10231dbb;padding:7px 14px;font-size:.8rem;color:white}.hero-copy{padding:27px 0 0}.eyebrow{color:var(--lime);font-weight:800;letter-spacing:.055em;font-size:.95rem}.hero h1{font-size:clamp(2.35rem,5.4vw,4.35rem);line-height:1.08;letter-spacing:-.055em;max-width:850px;margin:22px 0}.hero p{font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.55;color:#d7e5dd;max-width:760px;margin:0 0 25px}.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;border-radius:20px;padding:17px 28px;min-height:62px;font-weight:750;cursor:pointer;transition:transform .18s,background .18s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--lime);color:var(--forest)}.btn-primary:hover{background:var(--lime2)}.btn-outline{border-color:#b8d0c2;color:#fff;background:transparent}.btn-outline:hover{background:#ffffff12}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:22px 0 70px}.feature{border:1px solid var(--line);background:#fff;border-radius:23px;padding:25px 22px;min-height:190px}.feature-icon{width:42px;height:42px;color:#34775c;margin-bottom:15px}.feature h3{font-size:1.25rem;margin:0 0 9px;letter-spacing:-.025em}.feature p{color:#64736a;line-height:1.55;margin:0;font-size:.96rem}.section{padding:30px 0 72px}.section-head{text-align:center;max-width:700px;margin:0 auto 30px}.section-head .eyebrow{color:#397b58}.section h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.045em;line-height:1.1;margin:12px 0}.section-head p{color:#607169;line-height:1.65}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:27px}.step-no{width:42px;height:42px;border-radius:14px;background:var(--lime);display:grid;place-items:center;font-weight:850;color:var(--forest)}.step h3{margin:17px 0 8px}.step p{color:#66756c;line-height:1.6;margin:0}.cta{background:#eaf5dd;border-radius:28px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:70px}.cta h2{font-size:clamp(1.8rem,3vw,2.6rem);margin:0 0 10px}.cta p{margin:0;color:#52665a;line-height:1.6}.footer{background:#09251d;color:#d7e4dc;padding:32px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer small{color:#a8beb1}.modal-backdrop{position:fixed;inset:0;background:#04150fc7;display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.modal-backdrop.open{display:flex}.modal{width:min(520px,100%);background:#fff;border-radius:24px;padding:28px;position:relative;max-height:90vh;overflow:auto}.modal h2{margin:0 0 8px;font-size:1.7rem}.modal p{color:#65736a;line-height:1.5}.close{position:absolute;right:18px;top:15px;border:0;background:#edf2ed;border-radius:50%;width:36px;height:36px;font-size:1.3rem;cursor:pointer}.field{display:grid;gap:7px;margin:15px 0}.field label{font-weight:700;font-size:.92rem}.field input,.field select,.field textarea{width:100%;border:1px solid #d4dfd7;border-radius:12px;padding:12px 13px;background:#fbfcfa;color:#182c22}.field textarea{min-height:90px;resize:vertical}.form-note{font-size:.85rem;color:#617268}.success{display:none;background:#eaf7df;color:#214a31;padding:13px;border-radius:12px;margin-top:14px}.success.show{display:block}
+@media(max-width:850px){.features{grid-template-columns:repeat(2,1fr)}.menu{display:none;position:absolute;top:90px;right:4%;left:4%;background:#174234;border-radius:18px;padding:20px;flex-direction:column;align-items:flex-start;z-index:5}.menu.open{display:flex}.nav-toggle{display:block}.hero-shell{padding:0 22px 25px;border-radius:25px}.hero-image{border-radius:16px}.steps{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.wrap{width:92%}.nav{padding:15px 0}.logo{width:47px;height:47px;border-radius:14px}.tagline{font-size:.82rem}.hero-shell{padding:0 16px 20px}.hero-image{height:230px}.hero-copy{padding-top:23px}.hero h1{margin:16px 0;font-size:2.45rem}.hero p{font-size:1.03rem}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.btn{padding:14px 12px;min-height:57px;border-radius:16px;font-size:.98rem}.features{gap:12px;margin-bottom:48px}.feature{padding:19px 16px;min-height:180px;border-radius:19px}.feature h3{font-size:1.08rem}.feature p{font-size:.9rem}.section{padding-bottom:48px}.cta{padding:26px;border-radius:22px;margin-bottom:48px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="FoodBridge AI home">
+      <span class="logo"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27V14"/><path d="M16 18C8 18 6 12 6 8c7 0 11 3 10 10Z"/><path d="M16 15c0-7 4-11 11-11 0 7-4 12-11 12"/></svg></span>
+      <span><span class="brand-name">FoodBridge AI</span><span class="tagline" style="display:block">Share food. Spread hope.</span><span style="display:block;color:#d5f6a2;font-size:.78rem;font-weight:750;letter-spacing:.04em;margin-top:3px">A Growth X initiative</span></span>
+    </a>
+    <div class="menu" id="menu"><a href="#how-it-works">How it works</a><a href="#impact">Our impact</a><a href="#about">About us</a><a href="#growth-x">Growth X</a><a href="#contact">Contact</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </nav>
+</header>
+<main id="home" class="wrap">
+  <section class="hero-shell hero">
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=1600&q=85" alt="Freshly prepared food ready to be shared" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1600&q=85'">
+      <span class="photo-credit">Food for everyone</span>
+    </div>
+    <div class="hero-copy">
+      <div class="eyebrow">LESS WASTE. MORE CARE.</div>
+      <h1>Every meal deserves a destination.</h1>
+      <p>Connect surplus food to nearby communities with smart AI-powered matching.</p>
+      <div class="actions"><button class="btn btn-primary" data-open="donate">Donate Food</button><button class="btn btn-outline" data-open="find">Find Food</button></div>
+    </div>
+  </section>
+  <section class="features" id="impact" aria-label="Our features">
+    <article class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41S5 29 5 17C5 7 18 4 24 14 30 4 43 7 43 17c0 12-19 24-19 24Z"/><path d="m15 23 6 6 12-13"/></svg><h3>Easy Donations</h3><p>Share extra meals in a few simple steps and help good food find a new home.</p></article>
+    <article class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7a7 7 0 0 0-7 7v1a6 6 0 0 0-5 6 6 6 0 0 0 1 11 7 7 0 0 0 14 0V14a7 7 0 0 0-3-7Z"/><path d="M24 14h8l4-5M24 22h13l4-4M24 30h8l5 5M16 20h-5M16 28h-5"/></svg><h3>Smart Matching</h3><p>AI helps connect available food with nearby people and organizations who need it.</p></article>
+    <article class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 40 11v12c0 10-7 17-16 21C15 40 8 33 8 23V11L24 4Z"/><path d="m16 24 5 5 11-12"/></svg><h3>Safe & Reliable</h3><p>Clear food details and pickup information make sharing easier to coordinate.</p></article>
+    <article class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="19"/><path d="M24 13v12l8 5M10 8l5 4M38 8l-5 4"/></svg><h3>Less Food Waste</h3><p>Keep good food out of landfills while creating more caring communities.</p></article>
+  </section>
+  <section class="section" id="how-it-works">
+    <div class="section-head"><div class="eyebrow">GOOD FOOD, GOOD CONNECTIONS</div><h2>Small actions. Meaningful impact.</h2><p>Whether you have food to share or are looking for support, FoodBridge AI helps make the connection.</p></div>
+    <div class="steps"><article class="step"><div class="step-no">01</div><h3>Tell us what you have</h3><p>Donors add food details, quantity, freshness and a convenient pickup window.</p></article><article class="step"><div class="step-no">02</div><h3>Find a nearby match</h3><p>Smart matching helps identify nearby communities, shelters and food partners.</p></article><article class="step"><div class="step-no">03</div><h3>Share with care</h3><p>Coordinate pickup and get surplus food to people who can use it.</p></article></div>
+  </section>
+  <section class="section" id="growth-x" style="padding-top:0;padding-bottom:42px">
+    <div style="background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div>
+        <div class="eyebrow" style="color:#397b58">OUR TEAM</div>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);margin:8px 0">Growth X</h2>
+        <p style="margin:0;color:#607169;line-height:1.7">Owner: <strong style="color:#10231d">Krishna Kumar</strong></p>
+      </div>
+      <a class="btn btn-primary" href="tel:+919717614968">Call: 9717614968&nbsp; ↗</a>
+    </div>
+  </section>
+  <section class="cta" id="about"><div><h2>Be the reason a meal matters.</h2><p>One donation can make someone's day a little brighter.<br>Join the movement to share more and waste less.</p></div><button class="btn btn-primary" data-open="donate">Start a Donation&nbsp; →</button></section>
+</main>
+<footer class="footer" id="contact"><div class="wrap footer-inner"><div><strong>FoodBridge AI</strong><div>Share food. Spread hope.</div></div><small>© <span id="year"></span> FoodBridge AI. Built for a more thoughtful food system.</small><div><strong>Growth X</strong><br><small>Owner: Krishna Kumar</small><br><a href="tel:+919717614968">Mob: 9717614968 ↗</a></div></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal"><button class="close" id="closeModal" aria-label="Close">×</button><h2 id="modalTitle">Donate food</h2><p id="modalIntro">Tell us a little about the food you would like to share.</p>
+    <form id="foodForm">
+      <div class="field"><label for="personName">Your name</label><input id="personName" name="personName" placeholder="Enter your name" required></div>
+      <div class="field"><label for="email">Email or phone</label><input id="email" name="email" placeholder="How can we contact you?" required></div>
+      <div class="field"><label for="foodType">Food / request details</label><input id="foodType" name="foodType" placeholder="e.g. 20 fresh meal boxes" required></div>
+      <div class="field"><label for="location">Area / pickup location</label><input id="location" name="location" placeholder="Neighbourhood or address" required></div>
+      <div class="field"><label for="notes">Additional information (optional)</label><textarea id="notes" name="notes" placeholder="Quantity, timing, dietary details…"></textarea></div>
+      <button class="btn btn-primary" type="submit" style="width:100%">Submit details</button>
+      <p class="form-note">Demo form: details stay in this page and are not sent to a server.</p><div class="success" id="successMsg" role="status">Thank you! Your details have been recorded for this demo. Connect a backend to receive real submissions.</div>
+    </form>
+  </div>
+</div>
+<script>
+const menu=document.getElementById('menu'),toggle=document.getElementById('navToggle');
+toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+const backdrop=document.getElementById('modalBackdrop'),title=document.getElementById('modalTitle'),intro=document.getElementById('modalIntro'),foodType=document.getElementById('foodType'),success=document.getElementById('successMsg');
+function openModal(kind){title.textContent=kind==='find'?'Find food':'Donate food';intro.textContent=kind==='find'?'Tell us what support you are looking for and where.':'Tell us a little about the food you would like to share.';foodType.placeholder=kind==='find'?'e.g. Looking for meal boxes for 10 people':'e.g. 20 fresh meal boxes';success.classList.remove('show');backdrop.classList.add('open');document.body.style.overflow='hidden';document.getElementById('personName').focus()}
+document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openModal(b.dataset.open)));
+function closeModal(){backdrop.classList.remove('open');document.body.style.overflow=''}
+document.getElementById('closeModal').addEventListener('click',closeModal);backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.getElementById('foodForm').addEventListener('submit',e=>{e.preventDefault();success.classList.add('show');success.scrollIntoView({behavior:'smooth',block:'nearest'})});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
